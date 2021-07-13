@@ -1,6 +1,5 @@
 * {
   font-family: sans-serif;
-  background-color: #eceaec;
 }
 
 .column-half img {
@@ -17,14 +16,17 @@
   flex-direction: column;
 }
 
-h4 {
+.header{
   background-color: #4b2373;
+}
+
+.column-full h4{
+  display: flex;
+  align-items: center;
   margin: 0;
   height: 10vh;
   color: white;
   display: flex;
-  padding-left: 1rem;
-  padding-bottom: 4rem;
 }
 
 h3 {

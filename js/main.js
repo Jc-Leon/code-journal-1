@@ -27,16 +27,22 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   var newObj = {
-    ...obj,
     titleOf: form.title.value,
     photUrl: form.url.value,
     notesOf: form.notes.value,
     entry: obj.entry++
   };
 
-  entries.push(newObj);
+  entries.unshift(newObj);
+
+  localStorage.setItem('Values', JSON.stringify(entries));
+  var objects = localStorage.getItem('Values');
+  if (objects !== null) {
+    entries = JSON.parse(objects);
+  }
+  // console.log(JSON.parse(objects));
 
   $img.src = $imgSrc;
   document.getElementById('log').reset();
-  // console.log(entries);
+  // console.log(newObj);
 });

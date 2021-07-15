@@ -13,6 +13,18 @@ $input.addEventListener('input', function imageSrc(event) {
   }
 });
 
+form.addEventListener('submit', function submitEntry() {
+  event.preventDefault();
+
+  var newObj = {
+    titleOf: form.title.value,
+    photUrl: form.url.value,
+    notesOf: form.notes.value,
+    entry: data.nextEntryId++
+  };
+  data.entries.unshift(newObj);
+});
+
 form.addEventListener('submit', function resetForm() {
   $img.src = $imgSrc;
 

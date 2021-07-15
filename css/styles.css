@@ -6,11 +6,7 @@
   width: 100%;
 }
 
-.column-half .title-input {
-  display: flex;
-  flex-direction: column;
-}
-
+.column-half .title-input,
 .column-full .text-input {
   display: flex;
   flex-direction: column;

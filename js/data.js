@@ -7,24 +7,14 @@ var data = {
   nextEntryId: 1
 };
 
-var form = document.querySelector('form');
+window.addEventListener('beforeunload', function (event) {
+  var dataJSON = JSON.stringify(data);
 
-form.addEventListener('submit', function newObj() {
-  event.preventDefault();
-
-  var newObj = {
-    titleOf: form.title.value,
-    photUrl: form.url.value,
-    notesOf: form.notes.value,
-    entry: data.nextEntryId++
-  };
-
-  data.entries.unshift(newObj);
-
-  localStorage.setItem('Values', JSON.stringify(data.entries));
-  var objects = localStorage.getItem('Values');
-  if (objects !== null) {
-    data.entries = JSON.parse(objects);
-  }
+  localStorage.setItem('Values', dataJSON);
 
 });
+
+var prevDataJSON = localStorage.getItem('Values');
+if (prevDataJSON !== null) {
+  data = JSON.parse(prevDataJSON);
+}

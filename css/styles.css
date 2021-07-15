@@ -1,0 +1,52 @@
+* {
+  font-family: sans-serif;
+}
+
+.column-half img {
+  width: 100%;
+}
+
+.column-half .title-input,
+.column-full .text-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #4b2373;
+}
+
+.column-full h4 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 10vh;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+input,
+textarea,
+button {
+  border-radius: 5px;
+  border-width: thin;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+button {
+  background-color: #4b2373;
+  color: white;
+  height: 2rem;
+  width: 5rem;
+  font-size: 14px;
+}

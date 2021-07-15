@@ -19,8 +19,10 @@
   <body>
     <header class="header">
       <div class="container">
+        <div class="row">
         <div class="column-full">
           <h4>Code Journal</h4>
+        </div>
         </div>
       </div>
     </header>
@@ -28,36 +30,38 @@
     <main>
       <form id="log" data-view="entry-form">
         <div class="container">
+          <div class="row">
           <div class="column-half">
             <h3>New Entry</h3>
           </div>
           <div class="row">
             <div class="column-half">
               <img
-                class="img__holder"
+                class="img-holder"
                 src="./images/placeholder-image-square.jpg"
                 alt=""
               />
             </div>
 
             <div class="column-half">
-              <div class="title__input">
+              <div class="title-input">
                 <label for="title">Title</label>
                 <input  name="title" type="text" required />
 
                 <label for="url">Photo Url</label>
-                <input name="url" class="photo__url" type="text" required />
+                <input name="url" class="photo-url" type="text" required />
               </div>
             </div>
 
             <div class="column-full">
-              <div class="text__input">
+              <div class="text-input">
                 <label for="notes">Notes</label>
                 <textarea name="notes" id="" cols="30" rows="10" required></textarea>
               </div>
               <div class="inputBox">
                 <button type="submit">SAVE</button>
               </div>
+            </div>
             </div>
           </div>
         </div>

@@ -6,27 +6,26 @@
   width: 100%;
 }
 
-.column-half .title__input {
+.column-half .title-input {
   display: flex;
   flex-direction: column;
 }
 
-.column-full .text__input {
+.column-full .text-input {
   display: flex;
   flex-direction: column;
 }
 
-.header{
+.header {
   background-color: #4b2373;
 }
 
-.column-full h4{
+.column-full h4 {
   display: flex;
   align-items: center;
   margin: 0;
   height: 10vh;
   color: white;
-  display: flex;
 }
 
 h3 {

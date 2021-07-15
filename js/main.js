@@ -23,9 +23,6 @@ form.addEventListener('submit', function submitEntry() {
     entry: data.nextEntryId++
   };
   data.entries.unshift(newObj);
-});
-
-form.addEventListener('submit', function resetForm() {
   $img.src = $imgSrc;
 
   form.reset();
